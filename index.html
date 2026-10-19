@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapsible Sidebar</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fa-solid fa-layer-group"></i>
+            </div>
+            <span class="logo-text">MyDashboard</span>
+        </div>
+
+        <div class="menu-title">MAIN MENU</div>
+
+        <nav class="navigation">
+            <a href="#dashboard" class="nav-link active" title="Dashboard">
+                <i class="fa-solid fa-house"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="#profile" class="nav-link" title="Profile">
+                <i class="fa-solid fa-user"></i>
+                <span>Profile</span>
+            </a>
+
+            <a href="#messages" class="nav-link" title="Messages">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Messages</span>
+            </a>
+
+            <a href="#analytics" class="nav-link" title="Analytics">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Analytics</span>
+            </a>
+
+            <a href="#settings" class="nav-link" title="Settings">
+                <i class="fa-solid fa-gear"></i>
+                <span>Settings</span>
+            </a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <div class="user-avatar">CB</div>
+            <div class="user-info">
+                <strong>Chandan Bhatt</strong>
+                <small>Student</small>
+            </div>
+        </div>
+
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content" id="mainContent">
+
+        <header class="topbar">
+            <button class="toggle-btn" id="toggleBtn" aria-label="Toggle sidebar" aria-controls="sidebar"
+                aria-expanded="true">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <h2>Dashboard</h2>
+
+            <div class="topbar-right">
+                <i class="fa-regular fa-bell"></i>
+                <div class="small-avatar">CB</div>
+            </div>
+        </header>
+
+        <section class="content">
+            <div class="welcome-card">
+                <p class="eyebrow">WELCOME BACK</p>
+                <h1>Hello, Chandan!</h1>
+                <p>
+                    Welcome to your dashboard. Use the sidebar to explore
+                    different sections of the application.
+                </p>
+            </div>
+
+            <div class="section-heading">
+                <h2>Overview</h2>
+                <p>Your workspace at a glance</p>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="card-icon blue">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <p>Total Users</p>
+                    <h3>1,250</h3>
+                    <small>+12% this month</small>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon green">
+                        <i class="fa-solid fa-chart-simple"></i>
+                    </div>
+                    <p>Performance</p>
+                    <h3>85%</h3>
+                    <small>+8% this month</small>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon orange">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <p>New Messages</p>
+                    <h3>24</h3>
+                    <small>5 unread messages</small>
+                </div>
+            </div>
+
+            <div class="info-panel">
+                <h2>About This Project</h2>
+                <p>
+                    This collapsible sidebar is developed using HTML, CSS,
+                    and JavaScript. It demonstrates component layout,
+                    responsive design, toggle logic, and smooth animations.
+                </p>
+                <button class="learn-btn" id="learnBtn">Learn More</button>
+                <p class="learn-info" id="learnInfo" hidden>
+                    The sidebar can be expanded or collapsed using the menu
+                    button. On smaller screens, it opens as an overlay.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
